@@ -1,7 +1,7 @@
 {
     "name": "bjthecod3r/laravel-smartsms",
-    "description": ":package_description",
-    "license": "license",
+    "description": "A Laravel package for smartsms",
+    "license": "MIT",
     "authors": [
         {
             "name": "Bolaji Ajani",
