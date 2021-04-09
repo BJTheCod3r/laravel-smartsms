@@ -22,11 +22,6 @@ class SmartSmsServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // $this->loadTranslationsFrom(__DIR__.'/../resources/lang', 'bjthecod3r');
-        // $this->loadViewsFrom(__DIR__.'/../resources/views', 'bjthecod3r');
-        // $this->loadMigrationsFrom(__DIR__.'/../database/migrations');
-        // $this->loadRoutesFrom(__DIR__.'/routes.php');
-
         // Publishing is only necessary when using the CLI.
         if ($this->app->runningInConsole()) {
             $this->bootForConsole();
@@ -70,22 +65,5 @@ class SmartSmsServiceProvider extends ServiceProvider
             __DIR__.'/../config/smartsms.php' => config_path('smartsms.php'),
         ], 'smartsms.config');
 
-        // Publishing the views.
-        /*$this->publishes([
-            __DIR__.'/../resources/views' => base_path('resources/views/vendor/bjthecod3r'),
-        ], 'smartsms.views');*/
-
-        // Publishing assets.
-        /*$this->publishes([
-            __DIR__.'/../resources/assets' => public_path('vendor/bjthecod3r'),
-        ], 'smartsms.views');*/
-
-        // Publishing the translation files.
-        /*$this->publishes([
-            __DIR__.'/../resources/lang' => resource_path('lang/vendor/bjthecod3r'),
-        ], 'smartsms.views');*/
-
-        // Registering package commands.
-        // $this->commands([]);
     }
 }
