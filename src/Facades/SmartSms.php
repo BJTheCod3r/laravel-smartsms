@@ -13,6 +13,6 @@ class SmartSms extends Facade
      */
     protected static function getFacadeAccessor(): string
     {
-        return 'smartsms';
+        return 'laravel-smartsms';
     }
 }

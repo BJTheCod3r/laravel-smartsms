@@ -1,6 +1,6 @@
 {
     "name": "bjthecod3r/laravel-smartsms",
-    "description": "A Laravel package for smartsms",
+    "description": "A Laravel package for smartsmssolutions",
     "license": "MIT",
     "authors": [
         {
@@ -10,8 +10,9 @@
         }
     ],
     "homepage": "https://github.com/bjthecod3r/laravel-smartsms",
-    "keywords": ["Laravel", "SmartSms"],
+    "keywords": ["Laravel", "SmartSms", "smartsmssolutions.com", "php", "sms", "Laravel 7", "Laravel 8"],
     "require": {
+        "php": "^7.2|^8.0",
         "illuminate/support": "~7|~8"
     },
     "require-dev": {
