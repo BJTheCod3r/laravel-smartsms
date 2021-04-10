@@ -18,6 +18,15 @@ If you do not run Laravel 5.5 (or higher), then add the service provider in conf
 BJTheCod3r\SmartSms\SmartSmsServiceProvider::class
 ```
 
+For lower versions of Laravel, you can also register facade like so in config/app.php:
+```
+    'aliases' => [
+        ...
+        'SmartSms' => BJTheCod3r\SmartSms\Facades\SmartSms::class,
+        ...
+    ]
+```
+
 ## Configuration
 You can publish the configuration file using this command:
 
@@ -95,6 +104,11 @@ A successful response should look like this
 ```
 //Check balance with
 return $smartSms->checkBalance();
+```
+
+You may also use facade
+```
+SmartSms::sendSms("080xxxxxxxx", "Some message here.")->send();
 ```
 
 
