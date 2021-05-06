@@ -196,8 +196,7 @@ class SmartSms
      */
     public function checkBalance()
     {
-        $response = Http::get(Config::get('smartsms.base_url'), [
-            'checkbalance' => 1,
+        $response = Http::get(Config::get('smartsms.base_url')."/balance", [
             'token' => $this->token
         ]);
 

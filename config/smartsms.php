@@ -42,11 +42,11 @@ return [
     /**
      * SMS URI
      */
-    'sms_uri' => "https://smartsmssolutions.com/api/json.php",
+    'sms_uri' => "https://app.smartsmssolutions.ng/io/api/client/v1/sms/",
 
     /**
      * BASE URL
      */
-    'base_url' => "https://smartsmssolutions.com/api"
+    'base_url' => "https://app.smartsmssolutions.ng/io/api/client/v1"
 
 ];
